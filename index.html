@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vé Xe Rẻ</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f2f2f2;
+    }
+
+    header {
+      background-color: #005baa;
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+    }
+
+    .search-box {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 700px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .search-box h2 {
+      margin-top: 0;
+      margin-bottom: 15px;
+    }
+
+    .form-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .form-row input, .form-row button {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .form-row button {
+      background-color: #005baa;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+
+    .form-row button:hover {
+      background-color: #003f7f;
+    }
+
+    .results {
+      max-width: 700px;
+      margin: 0 auto 50px auto;
+    }
+
+    .bus-card {
+      background: white;
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    }
+
+    .bus-card h3 {
+      margin-top: 0;
+    }
+
+    .bus-info {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .price {
+      color: green;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Vé Xe Rẻ</h1>
+    <p>Đặt vé xe khách giá tốt nhất</p>
+  </header>
+
+  <div class="search-box">
+    <h2>Tìm chuyến xe</h2>
+    <div class="form-row">
+      <input type="text" placeholder="Nơi đi" />
+      <input type="text" placeholder="Nơi đến" />
+      <input type="date" />
+      <button>Tìm vé</button>
+    </div>
+  </div>
+
+  <div class="results">
+    <div class="bus-card">
+      <h3>Phương Trang</h3>
+      <div class="bus-info">
+        <span>TP.HCM → Đà Lạt</span>
+        <span>Giờ: 22:00</span>
+        <span class="price">250.000đ</span>
+      </div>
+    </div>
+    <div class="bus-card">
+      <h3>Mai Linh</h3>
+      <div class="bus-info">
+        <span>TP.HCM → Nha Trang</span>
+        <span>Giờ: 21:00</span>
+        <span class="price">230.000đ</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
